@@ -44,14 +44,16 @@ if ($req->isXmlHttpRequest()) {
         * { margin: 0; padding: 0; }
     </style>
     <script type="text/javascript">
-        var request = new XMLHttpRequest();
-        request.open('GET', window.location.href, true);
-        request.onload = function() {
-            if (this.status >= 200 && this.status < 400) {
-                document.body.innerHTML = this.response;
-            }
-        };
-        request.send();
+        setInterval(function(){
+            var request = new XMLHttpRequest();
+            request.open('GET', window.location.href, true);
+            request.onload = function() {
+                if (this.status >= 200 && this.status < 400) {
+                    document.body.innerHTML = this.response;
+                }
+            };
+            request.send();
+        }, 2000);
     </script>
 </head>
 <body>
