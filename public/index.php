@@ -41,7 +41,7 @@ if ($req->isXmlHttpRequest()) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vercors vie sauvage</title>
     <style type="text/css">
-        * { margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; font-family: arial, sans-serif; }
     </style>
     <script type="text/javascript">
         setInterval(function(){
